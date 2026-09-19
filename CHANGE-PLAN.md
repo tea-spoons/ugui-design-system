@@ -13,10 +13,11 @@ Originally developed at Bigpoint. Published here with Bigpoint's permission for 
 - Added `LICENSE.md` (PolyForm Noncommercial 1.0.0), an install section in the README, and package metadata (author, license and documentation URLs).
 - The samples folder now uses Unity's hidden `Samples~` layout and is registered in `package.json`.
 - Declared the missing dependency on `addressables-toolbox`.
+- Made standalone: no longer declares UniTask as a dependency. The parts that need TextMeshPro, UniTask or Addressables are compiled only when those are installed; the rest of the package needs only uGUI.
 
 ## Planned changes
 
-- [ ] Tag and publish `v0.13.4` with the Release workflow.
+- [ ] Tag and publish `v0.14.0` with the Release workflow.
 - [ ] Run this package's tests in CI with `unity-ci-kit` (needs a small test-project helper in the kit).
 - [ ] Make installs resolve dependencies automatically, for example through a registry such as OpenUPM.
 - [ ] Consider shipping a default `UIContent` so the package compiles without importing a sample first.

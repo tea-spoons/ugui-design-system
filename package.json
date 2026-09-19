@@ -1,6 +1,6 @@
 {
   "name": "com.tea-spoons.ugui-design-system",
-  "version": "0.13.4",
+  "version": "0.14.0",
   "displayName": "UGui Design System",
   "description": "A design system foundation for UGui projects.",
   "author": {
@@ -38,7 +38,6 @@
   "dependencies": {
     "com.tea-spoons.package-core": "0.5.0",
     "com.tea-spoons.runtime-toolbox": "0.11.0",
-    "com.cysharp.unitask": "2.5.0",
     "com.tea-spoons.addressables-toolbox": "0.5.0"
   },
   "license": "PolyForm-Noncommercial-1.0.0",

@@ -1,5 +1,5 @@
 
-#if ADDRESSABLES
+#if ADDRESSABLES && UNITASK
 namespace TeaSpoons.UGuiDesignSystem
 {
     using System;

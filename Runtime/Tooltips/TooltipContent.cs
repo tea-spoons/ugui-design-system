@@ -1,3 +1,4 @@
+#if UNITASK
 namespace TeaSpoons.UGuiDesignSystem
 {
     using Cysharp.Threading.Tasks;
@@ -41,3 +42,4 @@ namespace TeaSpoons.UGuiDesignSystem
         }
     }
 }
+#endif

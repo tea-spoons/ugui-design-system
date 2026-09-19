@@ -115,7 +115,7 @@ In Unity: **Window > Package Manager > + > Add package from git URL**, then ente
 https://github.com/tea-spoons/ugui-design-system.git
 ```
 
-Pin a release by appending a tag, for example `#v0.13.4`.
+Pin a release by appending a tag, for example `#v0.14.0`.
 
 ### Dependencies
 
@@ -130,6 +130,18 @@ Unity cannot resolve git dependencies automatically, so add these to your projec
 
 After installing, import the sample **Initial UIContent** (Package Manager > this package > Samples).
 Until then the package reports compile errors about `UIContent`. This is intended; see above.
+
+## Optional packages
+
+This package works on its own. It uses the packages below when your project has them (Unity detects them automatically) and simply leaves the related code out when it does not.
+
+| Package | Used for |
+|---|---|
+| uGUI (`com.unity.ugui`) | The package itself. Without it nothing is compiled. |
+| TextMeshPro (part of uGUI 2.0+, `com.unity.textmeshpro` before Unity 6) | The counter label of `UINotificationHighlight`. |
+| UniTask (`com.cysharp.unitask` 2.5.0+) | `TooltipContent<T>`. |
+| Addressables (`com.unity.addressables` 2.2.2+) and UniTask | `AsyncLoadableTooltip` and `TooltipTReference`. |
+| Unity Localization (`com.unity.localization` 1.5+) | Localized content in the `UIContent` editor. |
 
 ## Change plan
 

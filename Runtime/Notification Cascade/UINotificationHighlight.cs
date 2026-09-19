@@ -3,7 +3,9 @@ namespace TeaSpoons.UGuiDesignSystem
     using System.Collections.Generic;
     using System.Linq;
     using RuntimeToolbox;
+#if TEXTMESHPRO
     using TMPro;
+#endif
     using UnityEngine;
     using UnityEngine.Events;
 
@@ -35,8 +37,10 @@ namespace TeaSpoons.UGuiDesignSystem
         [SerializeField]
         [Tooltip("If null, this gameObject will be toggled on and off. If a remote object is to be used instead, link it here.")]
         private GameObject optionalRemoteTargetObject;
+#if TEXTMESHPRO
         [SerializeField]
         private TMP_Text counterLabel;
+#endif
         [SerializeField]
         [Tooltip("Will shorten the notification count shown in the label if > 100, and show 99+ instead.")]
         private bool abbreviateHighCounts = true;
@@ -110,6 +114,7 @@ namespace TeaSpoons.UGuiDesignSystem
 
             var shouldEnable = count > 0;
 
+#if TEXTMESHPRO
             // set notification counter to label (if visible)
             if (counterLabel != null && counterLabel.gameObject.activeInHierarchy)
             {
@@ -122,6 +127,7 @@ namespace TeaSpoons.UGuiDesignSystem
                     counterLabel.SetText(count.ToString());
                 }
             }
+#endif
 
             // return if enabled (=visibility) state didn't change
             if (wasEnabled == shouldEnable)

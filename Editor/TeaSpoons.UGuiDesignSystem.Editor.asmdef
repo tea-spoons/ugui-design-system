@@ -1,24 +1,31 @@
 {
-    "name": "TeaSpoons.UGuiDesignSystem.Editor",
-    "rootNamespace": "TeaSpoons.UGuiDesignSystem.Editor",
-    "references": [
-        "TeaSpoons.UGuiDesignSystem"
-    ],
-    "includePlatforms": [
-        "Editor"
-    ],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [
-        {
-            "name": "com.unity.localization",
-            "expression": "1.5",
-            "define": "USE_UNITY_LOCALIZATION"
-        }
-    ],
-    "noEngineReferences": false
+  "name": "TeaSpoons.UGuiDesignSystem.Editor",
+  "rootNamespace": "TeaSpoons.UGuiDesignSystem.Editor",
+  "references": [
+    "TeaSpoons.UGuiDesignSystem"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [
+    "UGUI"
+  ],
+  "versionDefines": [
+    {
+      "name": "com.unity.localization",
+      "expression": "1.5",
+      "define": "USE_UNITY_LOCALIZATION"
+    },
+    {
+      "name": "com.unity.ugui",
+      "expression": "1.0.0",
+      "define": "UGUI"
+    }
+  ],
+  "noEngineReferences": false
 }
