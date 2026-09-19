@@ -1,0 +1,47 @@
+{
+  "name": "com.tea-spoons.ugui-design-system",
+  "version": "0.13.4",
+  "displayName": "UGui Design System",
+  "description": "A design system foundation for UGui projects.",
+  "author": {
+    "name": "Muhammad Tarek Abdou",
+    "email": "muhammadtarekabdou@gmail.com",
+    "url": "https://github.com/MuhammadTarek0"
+  },
+  "samples": [
+    {
+      "displayName": "Initial UGui Design System Prefabs",
+      "description": "Sample: Initial UGui Design System Prefabs",
+      "path": "Samples~/Initial UGui Design System Prefabs"
+    },
+    {
+      "displayName": "Initial UIContent",
+      "description": "Sample: Initial UIContent",
+      "path": "Samples~/Initial UIContent"
+    },
+    {
+      "displayName": "Notification System Sample Scene",
+      "description": "Sample: Notification System Sample Scene",
+      "path": "Samples~/Notification System Sample Scene"
+    },
+    {
+      "displayName": "Tab System Sample Scene",
+      "description": "Sample: Tab System Sample Scene",
+      "path": "Samples~/Tab System Sample Scene"
+    },
+    {
+      "displayName": "Tooltips Sample Scene",
+      "description": "Sample: Tooltips Sample Scene",
+      "path": "Samples~/Tooltips Sample Scene"
+    }
+  ],
+  "dependencies": {
+    "com.tea-spoons.package-core": "0.5.0",
+    "com.tea-spoons.runtime-toolbox": "0.11.0",
+    "com.cysharp.unitask": "2.5.0",
+    "com.tea-spoons.addressables-toolbox": "0.5.0"
+  },
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "documentationUrl": "https://github.com/tea-spoons/ugui-design-system#readme",
+  "licensesUrl": "https://github.com/tea-spoons/ugui-design-system/blob/main/LICENSE.md"
+}

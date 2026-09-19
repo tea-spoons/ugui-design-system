@@ -1,0 +1,37 @@
+{
+    "name": "TeaSpoons.UGuiDesignSystem",
+    "rootNamespace": "TeaSpoons.UGuiDesignSystem",
+    "references": [
+        "TeaSpoons.AddressablesToolbox",
+        "TeaSpoons.PackageCore",
+        "TeaSpoons.RuntimeToolbox",
+        "Unity.TextMeshPro",
+        "UniTask",
+        "Unity.Localization"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.localization",
+            "expression": "1.5",
+            "define": "USE_UNITY_LOCALIZATION"
+        },
+        {
+            "name": "com.unity.addressables",
+            "expression": "0.1",
+            "define": "ADDRESSABLES"
+        },
+        {
+            "name": "com.tea-spoons.addressables-toolbox",
+            "expression": "0.1",
+            "define": "ADDRESSABLES_TOOLBOX"
+        }
+    ],
+    "noEngineReferences": false
+}

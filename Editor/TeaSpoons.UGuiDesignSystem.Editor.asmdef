@@ -1,0 +1,24 @@
+{
+    "name": "TeaSpoons.UGuiDesignSystem.Editor",
+    "rootNamespace": "TeaSpoons.UGuiDesignSystem.Editor",
+    "references": [
+        "TeaSpoons.UGuiDesignSystem"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.localization",
+            "expression": "1.5",
+            "define": "USE_UNITY_LOCALIZATION"
+        }
+    ],
+    "noEngineReferences": false
+}
