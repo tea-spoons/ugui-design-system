@@ -11,13 +11,13 @@ This way, to change the primary font of the project, it just has to be changed
 in that prefab.
 
 ## Installation
-**Important:** After downloading the package via package manager,
-compilation errors will happen.
-You need to select the package in the package manager
-and import the included sample `Initial UIContent`.
+The package compiles right after installing. `UIContent` ships with it. To adjust it to a project's needs,
+derive from it (its `components` field is protected), or copy the package into the project's `Packages` folder
+and edit `Runtime/UIContent.cs`.
 
-The reason for this is that the `UIContent` class is supposed to be
-freely adjusted depending on the project's specific needs.
+**Upgrading from 0.14 or older:** earlier versions asked you to import the sample `Initial UIContent`. If you did,
+delete that imported copy of `UIContent.cs` and its `.asmref`. The class is part of the package now, and two
+copies would clash.
 
 ## Concepts/Usage
 ### Controllers
@@ -115,7 +115,7 @@ In Unity: **Window > Package Manager > + > Add package from git URL**, then ente
 https://github.com/tea-spoons/ugui-design-system.git
 ```
 
-Pin a release by appending a tag, for example `#v0.14.0`.
+Pin a release by appending a tag, for example `#v0.15.0`.
 
 ### Dependencies
 
@@ -126,11 +126,6 @@ Unity cannot resolve git dependencies automatically, so add these to your projec
 - `com.cysharp.unitask` 2.5.0
 - `com.tea-spoons.addressables-toolbox` 0.5.0
 
-## Notes
-
-After installing, import the sample **Initial UIContent** (Package Manager > this package > Samples).
-Until then the package reports compile errors about `UIContent`. This is intended; see above.
-
 ## Optional packages
 
 This package works on its own. It uses the packages below when your project has them (Unity detects them automatically) and simply leaves the related code out when it does not.
@@ -138,7 +133,7 @@ This package works on its own. It uses the packages below when your project has 
 | Package | Used for |
 |---|---|
 | uGUI (`com.unity.ugui`) | The package itself. Without it nothing is compiled. |
-| TextMeshPro (part of uGUI 2.0+, `com.unity.textmeshpro` before Unity 6) | The counter label of `UINotificationHighlight`. |
+| TextMeshPro (part of uGUI 2.0+, `com.unity.textmeshpro` before Unity 6) | The label of `UIContent` and the counter label of `UINotificationHighlight`. Without TextMeshPro `UIContent` uses uGUI's built-in `Text`. |
 | UniTask (`com.cysharp.unitask` 2.5.0+) | `TooltipContent<T>`. |
 | Addressables (`com.unity.addressables` 2.2.2+) and UniTask | `AsyncLoadableTooltip` and `TooltipTReference`. |
 | Unity Localization (`com.unity.localization` 1.5+) | Localized content in the `UIContent` editor. |

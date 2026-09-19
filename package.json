@@ -1,6 +1,6 @@
 {
   "name": "com.tea-spoons.ugui-design-system",
-  "version": "0.14.0",
+  "version": "0.15.0",
   "displayName": "UGui Design System",
   "description": "A design system foundation for UGui projects.",
   "author": {
@@ -13,11 +13,6 @@
       "displayName": "Initial UGui Design System Prefabs",
       "description": "Sample: Initial UGui Design System Prefabs",
       "path": "Samples~/Initial UGui Design System Prefabs"
-    },
-    {
-      "displayName": "Initial UIContent",
-      "description": "Sample: Initial UIContent",
-      "path": "Samples~/Initial UIContent"
     },
     {
       "displayName": "Notification System Sample Scene",

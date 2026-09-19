@@ -14,15 +14,15 @@ Originally developed at Bigpoint. Published here with Bigpoint's permission for 
 - The samples folder now uses Unity's hidden `Samples~` layout and is registered in `package.json`.
 - Declared the missing dependency on `addressables-toolbox`.
 - Made standalone: no longer declares UniTask as a dependency. The parts that need TextMeshPro, UniTask or Addressables are compiled only when those are installed; the rest of the package needs only uGUI.
+- Ships a default `UIContent` in the package (with the original script GUID, so the sample prefabs keep working), so the package compiles without importing a sample. The `Initial UIContent` sample was removed. Without TextMeshPro its label uses uGUI's `Text`.
+- Restored the `.meta` files inside `Samples~`: the first migration dropped them, which breaks the links between sample assets when a sample is imported.
 
 ## Planned changes
 
-- [ ] Tag and publish `v0.14.0` with the Release workflow.
+- [ ] Tag and publish `v0.15.0` with the Release workflow.
 - [ ] Run this package's tests in CI with `unity-ci-kit` (needs a small test-project helper in the kit).
 - [ ] Make installs resolve dependencies automatically, for example through a registry such as OpenUPM.
-- [ ] Consider shipping a default `UIContent` so the package compiles without importing a sample first.
 
 ## Notes and ideas
 
-- After installing, import the `Initial UIContent` sample from the Package Manager. Until then the package reports compile errors about `UIContent`; this is by design (see the README).
 _Add your own here._
